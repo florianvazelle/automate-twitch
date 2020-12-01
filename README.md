@@ -1,6 +1,7 @@
 # Automate Twitch
 
-Automate the collection of [channel points](https://help.twitch.tv/s/article/channel-points-guide) on Twitch.
+Automate the collection of [channel points](https://help.twitch.tv/s/article/channel-points-guide) on Twitch.  
+You can install the latest version manually, from the [Firefox Add-ons web site.](https://addons.mozilla.org/en-US/firefox/addon/automate-twitch/)
 
 ## Usage
 
