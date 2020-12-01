@@ -72,15 +72,9 @@ module.exports = {
 
   entry: {
     manifest: path.join(sourcePath, 'manifest.json'),
-<<<<<<< HEAD
-    background: path.join(sourcePath, 'Background', 'index.ts'),
-    contentScript: path.join(sourcePath, 'ContentScript', 'index.ts'),
-    options: path.join(sourcePath, 'Options', 'index.tsx'),
-=======
     background: path.join(sourcePath, 'pages', 'Background', 'index.ts'),
     contentScript: path.join(sourcePath,'pages',  'ContentScript', 'index.ts'),
     options: path.join(sourcePath, 'pages', 'Options', 'index.tsx'),
->>>>>>> first commit
   },
 
   output: {
@@ -180,11 +174,7 @@ module.exports = {
       verbose: true,
     }),
     new HtmlWebpackPlugin({
-<<<<<<< HEAD
-      template: path.join(viewsPath, 'options.html'),
-=======
       template: path.join(sourcePath, 'pages', 'Options', 'options.html'),
->>>>>>> first commit
       inject: 'body',
       chunks: ['options'],
       hash: true,
@@ -194,11 +184,7 @@ module.exports = {
     new MiniCssExtractPlugin({filename: 'css/[name].css'}),
     // copy static assets
     new CopyWebpackPlugin({
-<<<<<<< HEAD
-      patterns: [{from: 'source/assets', to: 'assets'}],
-=======
       patterns: [{from: 'src/assets', to: 'assets'}],
->>>>>>> first commit
     }),
     // plugin to enable browser reloading in development mode
     extensionReloaderPlugin,
